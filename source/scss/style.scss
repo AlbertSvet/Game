@@ -1,0 +1,97 @@
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+@import url("https://fonts.googleapis.com/css?family=Bayon:regular&display=swap&subset=cyrillic-ext");
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "header";
+@import "home";
+@import "footer";
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+
+//</Шрифт по умолчанию>==========================================================================================
+
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+	
+  }
+
+.page {
+  padding: 0px 0px 0px 0px;
+	flex: 1 1 auto;
+}
+
+.lock {
+	overflow: hidden;
+}
+.title-h1 {
+	font-size: clamp(2.5rem, 0.61rem + 3.05vw, 3.125rem);
+	
+}
+.title-h2 {
+	font-size: clamp(26px, 1.159rem + 2.33vw, 50px);
+	color: #fff;
+	font-family: Bayon;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px; /* 120% */
+	letter-spacing: 1.5px;
+	text-transform: capitalize;
+}
+.text{
+	font-size: clamp(0.875rem, 0.529rem + 0.56vw, 1rem);
+	color: #FFF;
+	opacity: 0;
+	font-family: 'Bayon';
+	
+}
+//<Адаптив сетка>===========================================================================================================
+
+._container {
+	max-width: 1370px;
+	margin: 0px auto;
+	padding: 0px 10px 0px 10px;
+	@media (max-width: 1130px) {
+		max-width: 950px;
+	}
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+	@media (max-width: 768px) {
+		max-width: none;
+		padding: 0px 10px;
+	}
+}
+//======================
+// ======= вешаем hover на псевдоэлемент=======
+// &::after{
+// 	content:'';
+// 	height: 1px;
+// 	max-width: 384px;
+// 	background-color: #1344C0;             
+// 	opacity: 0;
+// 	display: block;
+// 	margin: 10px 0px 0px 0px;
+   
+					   
+// } 
+
+// &:hover{
+				
+// &::after {
+// 	content: '';
+// 	opacity: 1;
+// 	transition: all 0.8s ease 0.1s;
+	
+// }
+			
+// }
+  
+
